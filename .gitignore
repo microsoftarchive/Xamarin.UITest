@@ -1,0 +1,32 @@
+obj
+src/**/bin
+packages
+/build
+test_release
+.fake
+
+tools
+/IntegrationTests
+
+.DS_Store
+*.suo
+*.DotSettings.user
+*.csproj.user
+*.userprefs
+
+test-config.json
+*Result*.xml
+
+.vs/
+tmp
+
+# emacs and vim
+*~
+(.*/)?\#[^/]*\#$
+*.swp
+
+# JetBrains
+.idea
+
+# MacOS
+.DS_Store

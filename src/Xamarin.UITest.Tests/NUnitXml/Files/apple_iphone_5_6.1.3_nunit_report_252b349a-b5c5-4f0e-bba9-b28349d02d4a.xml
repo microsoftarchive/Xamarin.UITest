@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="/Volumes/Data/xamarin/workspaces/ios-csharp-test-job-5d936516-461e-4ab7-b90d-f78e5e1f83f820140327-3244-4j9ou6/ICSharpCode.SharpZipLib.dll" total="1" errors="0" failures="0" not-run="1" inconclusive="0" ignored="1" skipped="0" invalid="0" date="2014-03-27" time="20:44:00">
+  
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Test Project" name="" executed="True" result="Success" success="True" time="25.707" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="/Volumes/Data/xamarin/workspaces/ios-csharp-test-job-5d936516-461e-4ab7-b90d-f78e5e1f83f820140327-3244-4j9ou6/ICSharpCode.SharpZipLib.dll" executed="True" result="Inconclusive" success="False" time="0.009" asserts="0" />
+      <test-suite type="Assembly" name="/Volumes/Data/xamarin/workspaces/ios-csharp-test-job-5d936516-461e-4ab7-b90d-f78e5e1f83f820140327-3244-4j9ou6/Newtonsoft.Json.dll" executed="True" result="Inconclusive" success="False" time="0.007" asserts="0" />
+      <test-suite type="Assembly" name="/Volumes/Data/xamarin/workspaces/ios-csharp-test-job-5d936516-461e-4ab7-b90d-f78e5e1f83f820140327-3244-4j9ou6/Should.dll" executed="True" result="Inconclusive" success="False" time="0.006" asserts="0" />
+      <test-suite type="Assembly" name="/Volumes/Data/xamarin/workspaces/ios-csharp-test-job-5d936516-461e-4ab7-b90d-f78e5e1f83f820140327-3244-4j9ou6/Xamarin.UITest.Repl.dll" executed="True" result="Inconclusive" success="False" time="0.007" asserts="0" />
+      <test-suite type="Assembly" name="/Volumes/Data/xamarin/workspaces/ios-csharp-test-job-5d936516-461e-4ab7-b90d-f78e5e1f83f820140327-3244-4j9ou6/Xamarin.UITest.Shared.dll" executed="True" result="Inconclusive" success="False" time="0.006" asserts="0" />
+      <test-suite type="Assembly" name="/Volumes/Data/xamarin/workspaces/ios-csharp-test-job-5d936516-461e-4ab7-b90d-f78e5e1f83f820140327-3244-4j9ou6/Xamarin.UITest.Tests.Samples.NUnit.dll" executed="True" result="Success" success="True" time="24.763" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Xamarin" executed="True" result="Success" success="True" time="24.757" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="UITest" executed="True" result="Success" success="True" time="24.756" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="24.755" asserts="0">
+                    <results>
+                      <test-suite type="Namespace" name="Samples" executed="True" result="Success" success="True" time="24.755" asserts="0">
+                        <results>
+                          <test-suite type="Namespace" name="NUnit" executed="True" result="Success" success="True" time="24.754" asserts="0">
+                            <results>
+                              <test-suite type="TestFixture" name="GotoAndroidTests" executed="True" result="Inconclusive" success="False" time="0.097" asserts="0">
+                                <results>
+                                  <test-case name="Xamarin.UITest.Tests.Samples.NUnit.GotoAndroidTests.SimpleLoginTest" executed="False" result="Ignored">
+                                    <reason>
+                                      <message><![CDATA[Ignoring test because of wrong platform.]]></message>
+                                    </reason>
+                                  </test-case>
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="LPSimpleExampleiOSTests" executed="True" result="Success" success="True" time="24.646" asserts="0">
+                                <results>
+                                  <test-case name="Xamarin.UITest.Tests.Samples.NUnit.LPSimpleExampleiOSTests.BasicTest" executed="True" result="Success" success="True" time="23.206" asserts="1" />
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="Assembly" name="/Volumes/Data/xamarin/workspaces/ios-csharp-test-job-5d936516-461e-4ab7-b90d-f78e5e1f83f820140327-3244-4j9ou6/Xamarin.UITest.dll" executed="True" result="Inconclusive" success="False" time="0.007" asserts="0" />
+      <test-suite type="Assembly" name="/Volumes/Data/xamarin/workspaces/ios-csharp-test-job-5d936516-461e-4ab7-b90d-f78e5e1f83f820140327-3244-4j9ou6/nunit.framework.dll" executed="True" result="Inconclusive" success="False" time="0.007" asserts="0" />
+    </results>
+  </test-suite>
+</test-results>

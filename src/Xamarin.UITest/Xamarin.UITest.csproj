@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net6.0;net462</TargetFrameworks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>12.0</LangVersion>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xamarin.UITest</RootNamespace>
+    <AssemblyName>Xamarin.UITest</AssemblyName>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;TINYIOC_INTERNAL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <DocumentationFile>bin\Debug\Xamarin.UITest.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;TINYIOC_INTERNAL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Xamarin.UITest.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="TinyIoC" Version="1.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="iOS\Files\idevice-tools.zip" />
+    <EmbeddedResource Include="iOS\Files\QuitSimulator.AppleScript" />
+    <EmbeddedResource Include="iOS\Files\read-cmd.sh" />
+    <EmbeddedResource Include="iOS\Files\timeout3" />
+    <None Include="App.config" />
+    <EmbeddedResource Include="Utils\SpecFlow\Xamarin.UITest.SpecFlow.dll" />
+    <EmbeddedResource Include="Utils\SpecFlow\Xamarin.UITest.SpecFlow2.dll" />
+    <EmbeddedResource Include="Utils\SpecFlow\Xamarin.UITest.SpecFlow3.dll" />
+    <EmbeddedResource Include="Utils\SpecFlow\Xamarin.UITest.SpecFlow.Shared.dll" />
+    <EmbeddedResource Include="XDB\dependencies.zip" />
+    <EmbeddedResource Include="XDB\dependencies_hash.txt" />
+    <EmbeddedResource Include="XDB\deviceagent_cfbundleversion.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Android\Files\screenshotTaker.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.UITest.Repl\Xamarin.UITest.Repl.csproj" />
+    <ProjectReference Include="..\Xamarin.UITest.Shared\Xamarin.UITest.Shared.csproj" />
+  </ItemGroup>
+</Project>

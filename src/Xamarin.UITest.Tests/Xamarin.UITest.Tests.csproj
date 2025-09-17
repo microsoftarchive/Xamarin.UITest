@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net6.0;net462</TargetFrameworks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>12.0</LangVersion>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xamarin.UITest.Tests</RootNamespace>
+    <AssemblyName>Xamarin.UITest.Tests</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);NU1701</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>$(NoWarn);NU1701</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RuntimeIdentifiers>win-x64;osx-x64;linux-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NSubstitute" Version="5.1.0" />
+    <PackageReference Include="Should" Version="1.1.20" />
+    <PackageReference Include="Castle.Core" Version="5.1.1" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Files\goto_demoapp.apk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\goto_demoapp_errorSign.apk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Files\goto_demoapp_apksigner.apk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.UITest.Shared\Xamarin.UITest.Shared.csproj" />
+    <ProjectReference Include="..\Xamarin.UITest\Xamarin.UITest.csproj" />
+    <ProjectReference Include="..\Xamarin.UITest.Tests.Shared\Xamarin.UITest.Tests.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NUnitXml\Files\apple_ipad_mini_6.0.2_nunit_report_cd3c95ba-fc32-4842-990f-8b648bab6d83.xml" />
+    <EmbeddedResource Include="NUnitXml\Files\apple_iphone_4_6.1.3_nunit_report_b6db2328-1763-47a9-a827-c030e19cf1d7.xml" />
+    <EmbeddedResource Include="NUnitXml\Files\apple_iphone_4s_6.1.3_nunit_report_c90dba3b-4360-442a-b5f7-1fb2adc363b9.xml" />
+    <EmbeddedResource Include="NUnitXml\Files\apple_iphone_5_6.1.3_nunit_report_252b349a-b5c5-4f0e-bba9-b28349d02d4a.xml" />
+    <EmbeddedResource Include="Files\flipboard-xmltree.txt" />
+    <EmbeddedResource Include="Files\tasky-xmltree.txt" />
+    <EmbeddedResource Include="Files\ios-dump-0.12.2.txt" />
+    <EmbeddedResource Include="Files\multiple-launchable-activities.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Files\bug1-xmltree.txt" />
+  </ItemGroup>
+</Project>
